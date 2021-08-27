@@ -1,0 +1,1238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="icon" href="#" type="">
+
+    <!--  uniconsda yuklangan link iconkalarga javobgar  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--  AOS skrol bolganda effectli chiqishlarning linki  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--  PORTFOLIO qismidagi sliderni css qismini ulash linki  -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+
+    <!--  main css faylimizni ulash linki  -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Asadbek Qozaqov</title>
+</head>
+<body class="dark-theme">
+
+<!-- =======================================HEADER yani menu qismi joylashgan =================================== -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav-logo">Asadbek</a>
+
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list grid">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link" onclick="lincAction()">
+                        <i class="uil uil-estate nav-icon"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" onclick="lincAction()">
+                        <i class="uil uil-user nav-icon"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" onclick="lincAction()">
+                        <i class="uil uil-file-alt nav-icon"></i> Skills
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#services" class="nav-link" onclick="lincAction()">
+                        <i class="uil uil-briefcase-alt nav-icon"></i> Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" onclick="lincAction()">
+                        <i class="uil uil-scenery nav-icon"></i> Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" onclick="lincAction()">
+                        <i class="uil uil-message nav-icon"></i> Contactme
+                    </a>
+                </li>
+            </ul>
+            <i class="uil uil-times nav-close" id="nav-close"></i>
+        </div>
+
+        <div class="nav-btns">
+            <!-- =============================== THEMA CHANGE BUTTON yani temani kunduzi qorong'u qiladigan button ================================ -->
+            <i class="uil uil-sun change-theme" id="theme-button"></i>
+
+            <div class="nav-toogle" id="nav-toogle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- ====================================== main ======================================= -->
+<main class="main">
+    <!-- =================================== home qismi bu yerda uy qismi joylashadi ====================================== -->
+    <section class="home section" id="home">
+        <div class="home-container container grid">
+            <div class="home-content grid">
+                <div class="home-social">
+                    <a href="https://www.instagram.com/asadbek_21__" target="_blank" class="home-social-icon">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/asadbek.qozaqov" target="_blank" class="home-social-icon">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://t.me/@ax_ka_0123" target="_blank" class="home-social-icon">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+                </div>
+
+                <div class="home-img">
+                    <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                             130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                             97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                             0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                           -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="home-blob-img" xlink:href="img/mome-my-img.jpg"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="home-date">
+                    <h1 class="home-title">Hi, I'am Asadbek</h1>
+
+                    <h3 class="home-subtitle">Frontend developer</h3>
+                    <p class="home-description">Hight quality web sites and development experience, producing quality
+                        work</p>
+
+                    <a href="#contact" class="button button-flex">
+                        Contact me <i class="uil uil-message button-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home-scrool">
+                <a href="#about" class="home-scrool-button button-flex">
+                    <i class="uil uil-mouse-alt home-scroll-mouse"></i>
+                    <span class="home-scroll-name">Scroll down</span>
+                    <i class="uil uil-arrow-down home-scroll-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================================== ABOUT qismi bu yerda o'zim haqimda malumotlar joylashgan ====================================== -->
+    <section class="about section" id="about"   >
+        <h2 class="section-title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000">
+            About Me
+        </h2>
+        <span class="section-subtitle"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1500">
+            My introduction
+        </span>
+
+        <div class="about-container container grid">
+            <img class="about-img" src="img/MY%20top%20img.jpg" alt=""
+                 data-aos="fade-right"
+                 data-aos-offset="200"
+                 data-aos-easing="ease-in-sine"
+                 data-aos-duration="1000"
+            >
+
+            <div class="about-date">
+                <p class="about-description"
+                   data-aos="fade-left"
+                   data-aos-offset="200"
+                   data-aos-duration="500"
+                   data-aos-easing="ease-in-sine">
+                    A web programmer with experience, working in the frontend field, doing quality work
+                </p>
+
+                <div class="about-info"
+                     data-aos="fade-left"
+                     data-aos-offset="100"
+                     data-aos-duration="700"
+                     data-aos-easing="ease-in-sine">
+                    <div>
+                        <span class="about-info-title">6+</span>
+                        <span class="about-info-name">month <br> experience</span>
+                    </div>
+                    <div>
+                        <span class="about-info-title">5+</span>
+                        <span class="about-info-name">Completed <br> project</span>
+                    </div>
+                    <div>
+                        <span class="about-info-title">0+</span>
+                        <span class="about-info-name">Companies <br> worked</span>
+                    </div>
+                </div>
+
+                <div class="about-buttons"
+                     data-aos="fade-left"
+                     data-aos-offset="50"
+                     data-aos-duration="900"
+                     data-aos-easing="ease-in-sine">
+                    <a download="" href="my-resume/Qozaqov%20Asadbek%20Resume.pdf" class="button button-flex">
+                        Download CV <i class="uil uil-download-alt button-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  ===================================  SKILS bu yerda skills qismi joylashgan ====================================== -->
+    <section class="skills section" id="skills">
+        <h2 class="section-title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000">Skills
+        </h2>
+
+        <span class="section-subtitle"
+              data-aos="fade-up"
+              data-aos-offset="250"
+              data-aos-duration="1500">
+            My technical level
+        </span>
+
+        <div class="skills-container container grid">
+            <div>
+                <!--===========SKILLS 1      yani qobiliyatlar ko'nikmalar====================-->
+                <div class="skills-content"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-offset="200"
+                     data-aos-easing="ease-in-sine">
+                    <div onclick="activeSkills('1')" class="skills-header">
+                        <i class="uil uil-brackets-curly skills-icon"></i>
+
+                        <div>
+                            <h1 class="skills-titles">Frontend developer</h1>
+                            <span class="skills-subtitle">More than 1 year</span>
+                        </div>
+
+                        <i id="skills-arrow-active1" class="uil uil-angle-down skills-arrow skills-arrow-active "></i>
+                    </div>
+
+                    <div id="skills-list-active1" class="skills-list grid skills-list-active">
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">HTML</h3>
+                                <span class="skills number">90%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">CSS</h3>
+                                <span class="skills number">80%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">javaScript</h3>
+                                <span class="skills number">60%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">React</h3>
+                                <span class="skills number">70%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-react"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===========SKILLS 2      yani qobiliyatlar ko'nikmalar====================-->
+                <div class="skills-content            skild-2"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-anchor-placement="top-bottom"
+                     data-aos-easing="ease-in-sine">
+                    <div onclick="activeSkills('2')" class="skills-header">
+                        <i class="uil uil-server-network skills-icon"></i>
+
+                        <div>
+                            <h1 class="skills-titles">Backend developer</h1>
+                            <span class="skills-subtitle">More than 1 year</span>
+                        </div>
+
+                        <i id="skills-arrow-active2" class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+
+                    <div id="skills-list-active2" class="skills-list grid">
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">PHP</h3>
+                                <span class="skills number">10%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-php"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Node JS</h3>
+                                <span class="skills number">20%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-node"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Firebase</h3>
+                                <span class="skills number">40%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-ferebase"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Python</h3>
+                                <span class="skills number">80%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!--===========SKILLS 3      yani qobiliyatlar ko'nikmalar====================-->
+                <div class="skills-content"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-offset="200"
+                     data-aos-easing="ease-in-sine">
+                    <div onclick="activeSkills('3')" class="skills-header">
+<!--                        <i class="uil uil-swatchbook skills-icon"></i>-->
+                        <i class="uil uil-plus-circle skills-icon"></i>
+
+                        <div>
+                            <h1 class="skills-titles">Additions</h1>
+                            <span class="skills-subtitle">More than 7 month</span>
+                        </div>
+
+                        <i id="skills-arrow-active3" class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+
+                    <div id="skills-list-active3" class="skills-list grid">
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Bootstrap</h3>
+                                <span class="skills number">80%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-figma"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">SCSS</h3>
+                                <span class="skills number">70%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-sketch"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-date">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Reactstrap</h3>
+                                <span class="skills number">70%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-photoshop"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--    ==================================  QUALIFICATION ko'nikma yani o'qish va ish tarixi  =================================-->
+    <section class="qualification section">
+        <h2 class="section-title" data-aos="fade-up"
+            data-aos-duration="1000">
+            Qualification
+        </h2>
+        <span class="section-subtitle"
+              data-aos="fade-up"
+              data-aos-duration="1500">
+            My personal journey
+        </span>
+
+        <div class="qualification-container container">
+            <div class="qualification-tabs">
+                <div id="education" onclick="addAndRemove('education')"
+                     class="qualification-button button-flex qualification-button-active"
+                     data-aos="fade-right"
+                     data-aos-offset="200"
+                     data-aos-duration="1000">
+                    <i class="uil uil-graduation-cap qualification-icon"></i>
+                    Edication
+                </div>
+
+                <div id="work" onclick="addAndRemove('work')" class="qualification-button button-flex            qualification-work"
+                     data-aos="fade-left"
+                     data-aos-offset="200"
+                     data-aos-duration="1000">
+                    <i class="uil uil-briefcase-alt qualification-icon"></i>
+                    Work
+                </div>
+            </div>
+
+            <div class="qualification-sections">
+                <!--========================  QUALIFICATION CONTENT 1  =======================-->
+                <div class="qualification-content qualification-tab-active" id="qualification-content1">
+                    <!--========================  QUALIFICATION 1  =======================-->
+                    <div class="qualification-date">
+                        <div
+                                data-aos="zoom-in-right"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">Student</h3>
+                            <span class="qualification-subtitle">Academic lyceum</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017-2019
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+                    </div>
+
+                    <!--========================  QUALIFICATION 2  =======================-->
+                    <div class="qualification-date">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+
+                        <div
+                                data-aos="zoom-in-left"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">Computer injineer</h3>
+                            <span class="qualification-subtitle">TUIT - university</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2019 - 2023
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--========================  QUALIFICATION 3  =======================-->
+                    <div class="qualification-date">
+                        <div
+                                data-aos="zoom-in-right"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">Frontend Developer</h3>
+                            <span class="qualification-subtitle">PDP - Academy</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020 - 2021
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+<!--                            <span class="qualification-line"></span>-->
+                        </div>
+                    </div>
+
+                    <!--========================  QUALIFICATION 4  =======================-->
+                    <div class="qualification-date             qualification-4">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+                            <!--                        <span class="qualification-line"></span>-->
+                        </div>
+
+                        <div
+                                data-aos="zoom-in-left"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">Master in Ui/Ux</h3>
+                            <span class="qualification-subtitle">TUIT - University</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2015 - 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--========================  QUALIFICATION CONTENT 2  =======================-->
+                <div  id="qualification-content2" class="qualification-content           qualification-contend-2">
+                    <!--========================  QUALIFICATION 1  =======================-->
+                    <div class="qualification-date">
+                        <div
+                                data-aos="zoom-in-right"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">Software Enginer</h3>
+                            <span class="qualification-subtitle">Micrasoft - Uzbekistan</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2016 - 2019
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+                    </div>
+
+                    <!--========================  QUALIFICATION 2  =======================-->
+                    <div class="qualification-date">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+                            <span class="qualification-line"></span>
+                        </div>
+
+                        <div
+                                data-aos="zoom-in-left"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">Frontend Developer</h3>
+                            <span class="qualification-subtitle">EPAM - Company</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2010 - 2015
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--========================  QUALIFICATION 3  =======================-->
+                    <div class="qualification-date">
+                        <div
+                                data-aos="zoom-in-right"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out">
+                            <h3 class="qualification-title">ui design</h3>
+                            <span class="qualification-subtitle">PDP - Academy</span>
+                            <div class="qualification-calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021 - 2021
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification-rounder"></span>
+                            <!--                            <span class="qualification-line"></span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ==============================  SERVICE yani sizga qanday hizmat korsata olaman  ============================  -->
+    <section class="services section" id="services">
+        <h2 class="section-title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000">
+            Services
+        </h2>
+        <span class="section-subtitle"
+              data-aos="fade-up"
+              data-aos-offset="250"
+              data-aos-duration="1500">
+            What i offer
+        </span>
+
+        <div class="services-container container grid">
+            <!--    =======================  SERVICES 1  ====================    -->
+            <div class="services-content                   services-1"
+                 data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom"
+                 data-aos-offset="50"
+                 data-aos-delay="0"
+                 data-aos-duration="800"
+                 data-aos-easing="ease-in-out">
+                <div>
+                    <i class="uil uil-web-grid services-icon"></i>
+                    <h3 class="services-title">Ui/Ux <br> Designer</h3>
+                </div>
+
+                <span class="button button-flex button-small button-link services-button">
+                View More
+                <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+
+                <div class="services-modal">
+                    <div class="services-modal-content">
+                        <h4 class="services-modal-title">Ui/Ux <br> Designer</h4>
+                        <i class="uil uil-times services-modal-close"></i>
+
+                        <ul class="services-modal-services grid">
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>Wep page development.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I Ux element interaction.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I position your company brand.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--   ======================= SERVICES 2 ==================== -->
+            <div class="services-content ">
+                <div>
+                    <i class="uil uil-arrow services-icon"></i>
+                    <h3 class="services-title">Frontend <br> Developer </h3>
+                </div>
+
+                <span class="button button-flex button-small button-link services-button">
+                View More
+                <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+
+                <div class="services-modal">
+                    <div class="services-modal-content">
+                        <h4 class="services-modal-title">Frontend <br> Developer</h4>
+                        <i class="uil uil-times services-modal-close"></i>
+
+                        <ul class="services-modal-services grid">
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>Wep page development.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I write clean code.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I solve complex problems.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--    ======================= SERVICES 3 ==================== -->
+            <div class="services-content                   services-3"
+                 data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom"
+                 data-aos-offset="50"
+                 data-aos-delay="200"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out">
+                <div>
+                    <i class="uil uil-pen services-icon"></i>
+                    <h3 class="services-title">Branding <br> Designer</h3>
+                </div>
+
+                <span class="button button-flex button-small button-link services-button">
+                View More
+                <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+
+                <div class="services-modal">
+                    <div class="services-modal-content">
+                        <h4 class="services-modal-title">Branding <br> Designer</h4>
+                        <i class="uil uil-times services-modal-close"></i>
+
+                        <ul class="services-modal-services grid">
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>Wep page development.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I Ux element interaction.</p>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p>I position your company brand.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  =================================  PORTFOLIO bu yerda qilgan ishlarim joylashgan  ===============================  -->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section-title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000">
+            Portfolio
+        </h2>
+        <span class="section-subtitle"
+              data-aos="fade-up"
+              data-aos-offset="250"
+              data-aos-duration="1500">
+            Most recent work
+        </span>
+
+        <div class="portfolio-container container swiper-container mySwiper"
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-offset="200"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+        >
+            <div class="swiper-wrapper">
+                <!--===================  PORTFOLIO 1  =================-->
+                <div class="portfolio-content grid swiper-slide">
+                    <img class="portfolio-img" src="img/messi.jfif" alt="">
+
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Modern Website</h3>
+                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aliquam delectus.
+                        </p>
+
+                        <a href="" class="button button-flex button-small portfolio-button">
+                            Demo
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--===================  PORTFOLIO 2  =================-->
+                <div class="portfolio-content grid swiper-slide">
+                    <img class="portfolio-img" src="img/messi.jfif" alt="">
+
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Brand design</h3>
+                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aliquam delectus.
+                        </p>
+
+                        <a href="" class="button button-flex button-small portfolio-button">
+                            Demo
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--===================  PORTFOLIO 3  =================-->
+                <div class="portfolio-content grid swiper-slide">
+                    <img class="portfolio-img" src="img/messi.jfif" alt="">
+
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Online Store</h3>
+                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aliquam delectus.
+                        </p>
+
+                        <a href="" class="button button-flex button-small portfolio-button">
+                            Demo
+                            <i class="uil uil-arrow-right button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= Add arrow next and prev - sloderni o'tkazadigan arrow qismi =================================== -->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swipper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swipper-portfolio-icon"></i>
+            </div>
+
+            <!-- ========== Add pagination bu qisim sliderni tagida slider qaysi qisimga kelganini korsatib turuvchi nuqtalardan iborat ========== -->
+            <div class="swiper-pagination">
+            </div>
+        </div>
+    </section>
+
+
+    <!--  ==============================  PROJECT IN MIND   ============================  ****-->
+    <section class="project section">
+        <div class="project-bg"
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+        >
+            <div class="project-container container grid">
+                <div class="project-data">
+                    <h2 class="project-title"
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
+                        You have a new project
+                    </h2>
+                    <p class="project-description"
+                       data-aos="fade-up"
+                       data-aos-offset="300"
+                       data-aos-delay="100"
+                       data-aos-duration="1000"
+                       data-aos-easing="ease-in-out"
+                    >
+                        Lorem ipsum dolor sit amet. asasas adadad
+                    </p>
+                    <a href="#contact" class="button button-flex button-white"
+                       data-aos="fade-up"
+                       data-aos-offset="300"
+                       data-aos-delay="100"
+                       data-aos-duration="1000"
+                       data-aos-easing="ease-in-out"
+                    >
+                        Contact Me
+                        <i class="uil uil-message project-icon button-icon"></i>
+                    </a>
+                </div>
+
+                <img src="img/My-project-img.jpg" alt="" class="project-img"
+                     data-aos="zoom-in-down"
+                     data-aos-offset="200"
+                     data-aos-delay="100"
+                     data-aos-duration="1000"
+                     data-aos-easing="ease-in-out"
+                >
+            </div>
+        </div>
+    </section>
+
+
+    <!--  ==============================  TESTIMONIAL   ============================  -->
+    <section class="testimonial section">
+        <h2 class="section-title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000">
+            Testimonial
+        </h2>
+        <span class="section-subtitle"
+              data-aos="fade-up"
+              data-aos-offset="250"
+              data-aos-duration="1500">
+            My client saying
+        </span>
+
+        <div class="testimonial-container container swiper-container mySwiper"
+             data-aos="fade-up"
+             data-aos-anchor-placement="center-bottom"
+             data-aos-offset="0"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+        >
+            <div class="swiper-wrapper">
+                <!-- ============================= TESTIMONIAL 1 ============================= -->
+                <div class="testimonial-content swiper-slide">
+                    <div class="testimonial-data">
+                        <div class="testimonial-header">
+                            <img src="img/messi.jfif" alt="" class="testimonial-img">
+
+                            <div>
+                                <h3 class="testimonial-name">Ismoil Roziboev</h3>
+                                <span class="testimonial-client">Friend</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="testimonial-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt quas ratione
+                        rem soluta suscipit. Lorem ipsum dolor sit amet,
+                    </p>
+                </div>
+
+                <!-- ============================= TESTIMONIAL 2 ============================= -->
+                <div class="testimonial-content swiper-slide">
+                    <div class="testimonial-data">
+                        <div class="testimonial-header">
+                            <img src="img/messi.jfif" alt="" class="testimonial-img">
+
+                            <div>
+                                <h3 class="testimonial-name">Azizbek Nosirjanov</h3>
+                                <span class="testimonial-client">Friend</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="testimonial-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt quas ratione
+                        rem soluta suscipit. Lorem ipsum dolor sit amet,
+                    </p>
+                </div>
+
+                <!-- ============================= TESTIMONIAL 3 ============================= -->
+                <div class="testimonial-content swiper-slide">
+                    <div class="testimonial-data">
+                        <div class="testimonial-header">
+                            <img src="img/messi.jfif" alt="" class="testimonial-img">
+
+                            <div>
+                                <h3 class="testimonial-name">Mirjalol Qosimov</h3>
+                                <span class="testimonial-client">Friend</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                            <i class="uil uil-star testimonial-icon-star"></i>
+                        </div>
+                    </div>
+
+
+                    <p class="testimonial-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt quas ratione
+                        rem soluta suscipit. Lorem ipsum dolor sit amet,
+                    </p>
+                </div>
+            </div>
+            <!--  ====================  swiper pagination bu qisim sliderni pastki qismida chiqadigan nuqtalarni ifodalaydi yani o'tkazgichlar  ==================  -->
+            <div class="swiper-pagination swiper-pagination-testimonial"></div>
+        </div>
+    </section>
+
+
+    <!--  ==============================  CONTACT ME bu yerda men bilan bog'lanish mumkun  ==============================  -->
+    <section class="contact section" id="contact">
+        <h2 class="section-title"
+            data-aos-offset="200"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+            Contact Me
+        </h2>
+        <span class="section-subtitle"
+              data-aos-offset="250"
+              data-aos="fade-up"
+              data-aos-duration="1000">
+            Get in touch
+        </span>
+
+        <div class="contact-container container grid">
+            <div>
+                <div class="contact-information"
+                     data-aos-offset="200"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                >
+                    <i class="uil uil-phone contact-icon"></i>
+
+                    <div>
+                        <h3 class="contact-title">Call Me</h3>
+                        <span class="contact-subtitle">+998 94 158 11 51</span>
+                    </div>
+                </div>
+
+                <div class="contact-information"
+                     data-aos-offset="200"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                >
+                    <i class="uil uil-envelope contact-icon"></i>
+
+                    <div>
+                        <h3 class="contact-title">Email</h3>
+                        <span class="contact-subtitle">qozaqovasadbek@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-information"
+                     data-aos-offset="200"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                >
+                    <i class="uil uil-map-marker contact-icon"></i>
+
+                    <div>
+                        <h3 class="contact-title">Location</h3>
+                        <span class="contact-subtitle">Toshkent - Yunusobod 2/22/37</span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="contact-form grid">
+                <div class="contact-inputs grid">
+                    <div class="contact-content"
+                         data-aos-offset="200"
+                         data-aos="fade-up"
+                         data-aos-delay="50"
+                         data-aos-duration="1000"
+                         data-aos-easing="ease-in-out"
+                    >
+                        <label for="name" class="contact-label">Name</label>
+                        <input id="name" type="text" class="contact-input">
+                    </div>
+
+                    <div class="contact-content"
+                         data-aos-offset="200"
+                         data-aos="fade-up"
+                         data-aos-delay="50"
+                         data-aos-duration="1000"
+                         data-aos-easing="ease-in-out"
+                    >
+                        <label for="email" class="contact-label">Email</label>
+                        <input id="email" type="email" class="contact-input">
+                    </div>
+                </div>
+                <div class="contact-content"
+                     data-aos-offset="200"
+                     data-aos="fade-up"
+                     data-aos-delay="50"
+                     data-aos-duration="1000"
+                     data-aos-easing="ease-in-out"
+                >
+                    <label for="project" class="contact-label">Project</label>
+                    <input id="project" type="text" class="contact-input">
+                </div>
+                <div class="contact-content"
+                     data-aos-offset="100"
+                     data-aos="fade-up"
+                     data-aos-delay="50"
+                     data-aos-duration="1000"
+                     data-aos-easing="ease-in-out">
+                    <label for="message" class="contact-label">Message</label>
+                    <textarea name="message" id="message" cols="0" rows="2" class="contact-input"></textarea>
+                </div>
+
+                <div>
+                    <a href="https://t.me/ax_ka_0123" class="button button-flex"
+                       data-aos="fade-up"
+                       data-aos-duration="1000"
+                       data-aos-easing="ease-in-out"
+                    >
+                        Send Message
+                        <i class="uil uil-message button-icon"></i>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</main>
+
+<!--  ===================================  FOOTER yani saytimizning pastki qismi  ================================  -->
+<footer>
+    <div class="footer-bg"
+         data-aos="fade-up"
+         data-aos-anchor-placement="top-bottom"
+         data-aos-delay="200"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+    >
+        <div class="footer-container container grid">
+            <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-out"
+            >
+                <h1 class="footer-title">
+                    Asadbek
+                </h1>
+                <span class="footer-subtitle">
+                    Frontend developer
+                </span>
+            </div>
+
+            <ul class="footer-links">
+                <li
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="0"
+                        data-aos-duration="400"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in-out"
+                >
+                    <a href="#services" class="footer-link">Services</a>
+                </li>
+                <li
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="50"
+                        data-aos-duration="700"
+                        data-aos-offset="100"
+                        data-aos-easing="ease-in-out"
+                >
+                    <a href="#portfolio" class="footer-link">Portfolio</a>
+                </li>
+                <li
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="100"
+                        data-aos-offset="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                >
+                    <a href="#contact" class="footer-link">Contactme</a>
+                </li>
+            </ul>
+
+            <div class="footer-socials"
+                 data-aos="fade-up"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-delay="0"
+                 data-aos-duration="1000"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-out"
+            >
+                <a href="https://www.facebook/asadbek.qozaqov" class="footer-social" target="_blank">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram/asadbek_21__" class="footer-social" target="_blank">
+                    <i class="uil uil-instagram"></i>
+                </a>
+
+                <a href="https://t.me/ax_ka_0123" class="footer-social" target="_blank">
+                    <i class="uil uil-telegram-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-copy"
+           data-aos="fade-up"
+           data-aos-anchor-placement="top-bottom"
+           data-aos-delay="0"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out"
+        >
+            &#169; Asadbek. All right reserved
+        </p>
+    </div>
+</footer>
+
+
+<!--  ==================================  SCROLL TOP yani bu yerda ustiga bossa sayt home qismiga qayerda turgan bolsa ham borip qolishini taminlaydi aniqrog'i position: fixed;  ==============================  -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup-icon"></i>
+</a>
+
+
+<!--  PORTFOLIO qismidagi sliderni ishga tushurish uchun yuklab olgan js faylimizni script bilan ulash qismi  -->
+<script src="index-Js/swiper-bundle.min.js"></script>
+
+<!--  AOS link effektli chiqishlarning linki  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--  index js ni ulash scripti  -->
+<script src="index-Js/index.js"></script>
+
+</body>
+</html>
