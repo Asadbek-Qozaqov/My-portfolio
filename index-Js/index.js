@@ -125,11 +125,11 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
     spaceBetween: 48,
 
     pagination: {
+        autoplay:true,
         el: ".swiper-pagination",
         clickable: true, // clickable bu sliderning pastidagi nuqtalarni bosganda ham slider o'tishini taminlab beradi
         dynamicBullets: true,  // dynamicBullets bu sliderni nuqtachalari bosilganda effectivni ishlashi uchun kerak
     },
-
     breakpoints: {
         568: {
             slidesPerView: 2,
@@ -213,7 +213,7 @@ document.getElementById('theme-button').addEventListener('click', () => {
 // AOS scrol bolgnda effectli chiqishlarning js codi
 
 AOS.init({
-    once: true,   // bu cod aosni bir marta ishlatadi
+    once: false,   // bu cod aosni bir marta ishlatadi
     disable: 'boolean', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function ///// bu kodlar aosni qaysi ekranlarda ishlamasligini taminlaydi
 });
 

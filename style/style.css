@@ -541,6 +541,10 @@ img {
     width: 70%;
 }
 
+.skills-redux {
+    width: 90%;
+}
+
 .skills-php {
     width: 10%;
 }
@@ -1364,7 +1368,7 @@ img {
 
 
 /*  kelajakda qoshilishi mumkun bolgan qobiliyatlarimni tayyorlab qoydim ammo korinmas holatga keltirish uchunyozgan css codlarim  */
-.skild-2 {
+.skils-2 {
     display: none;
 }
 
