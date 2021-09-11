@@ -9,7 +9,7 @@
     /*================= ranglar ================*/
 
     /*    eng sevimli rang bunda rangni o'zgartirish mumkun*/
-    --hue-color: 250; /*  purpe 250 -green 142 -blue 230 -pink 340  */
+    --hue-color: 142; /*  purpe 250 -green 142 -blue 230 -pink 340  */
 
     /*  hsl rang turlari bu yerda barcha saytga kerak ranglar mavjud*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
