@@ -105,7 +105,7 @@ for (let i = 0; i < modalViews.length; i++) {
 let swiperPortfolio = new Swiper(".portfolio-container", {
     cssMode: true,
     loop: true,
-    autoplay:true,
+    autoplay: true,
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -127,7 +127,7 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
     spaceBetween: 48,
 
     pagination: {
-        autoplay:true,
+        autoplay: true,
         el: ".swiper-pagination",
         clickable: true, // clickable bu sliderning pastidagi nuqtalarni bosganda ham slider o'tishini taminlab beradi
         dynamicBullets: true,  // dynamicBullets bu sliderni nuqtachalari bosilganda effectivni ishlashi uchun kerak
@@ -195,22 +195,44 @@ window.addEventListener('scroll', windowScrollUp);
 
 
 // ================================  DARK LIGHT THEME yani qorong'u yoriq tema qismi  ==============================
-let darkTheme = true;
 
-document.getElementById('theme-button').addEventListener('click', () => {
-    darkTheme = !darkTheme;
+document.getElementById('theme-button').addEventListener('click', changeThemeFunction);
 
-    if (darkTheme === false) {
+let theme1 = localStorage.getItem('siteTheme');
+if (theme1 === 'false') {
+    document.body.classList.remove('dark-theme');
+    document.getElementById('theme-button').classList.remove('uil-sun');
+    document.getElementById('theme-button').classList.add('uil-moon');
+
+} else if (theme1 === 'true') {
+    document.body.classList.add('dark-theme');
+    document.getElementById('theme-button').classList.remove('uil-moon');
+    document.getElementById('theme-button').classList.add('uil-sun');
+}
+
+function changeThemeFunction() {
+    let theme2 = localStorage.getItem('siteTheme');
+    let change;
+
+    if(theme2 === 'true') {
+        localStorage.setItem('siteTheme', 'false')
+        change = false;
+    }else if (theme2 === 'false') {
+        localStorage.setItem('siteTheme', 'true')
+        change = true;
+    }
+
+    if (change === false) {
         document.body.classList.remove('dark-theme');
         document.getElementById('theme-button').classList.remove('uil-sun');
         document.getElementById('theme-button').classList.add('uil-moon');
 
-    } else if (darkTheme === true) {
+    } else if (change === true) {
         document.body.classList.add('dark-theme');
         document.getElementById('theme-button').classList.remove('uil-moon');
         document.getElementById('theme-button').classList.add('uil-sun');
     }
-});
+}
 
 // AOS scrol bolgnda effectli chiqishlarning js codi
 
@@ -218,6 +240,8 @@ AOS.init({
     once: true,   // bu cod aosni bir marta ishlatadi
     disable: 'boolean', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function ///// bu kodlar aosni qaysi ekranlarda ishlamasligini taminlaydi
 });
+
+
 
 
 
