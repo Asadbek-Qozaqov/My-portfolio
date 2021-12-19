@@ -902,7 +902,7 @@ img {
 }
 
 .swiper-container .swiper-pagination-testimonial {
-    bottom: 0;
+    bottom: 0!important;
 }
 
 /*  =============================  CONTACT ME yani bu yerda men bilan bog'lanish qismining css codlari mavjud  ===========================  */
