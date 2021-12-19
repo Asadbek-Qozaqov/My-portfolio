@@ -825,7 +825,7 @@ img {
 }
 
 .swiper-container-horizontal .swiper-pagination-bullets {
-    bottom: -2rem;
+    bottom: -2rem!important;
 }
 
 .swiper-pagination-bullet-active {
