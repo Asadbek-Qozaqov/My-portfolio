@@ -213,7 +213,7 @@ document.getElementById('theme-button').addEventListener('click', () => {
 // AOS scrol bolgnda effectli chiqishlarning js codi
 
 AOS.init({
-    once: false,   // bu cod aosni bir marta ishlatadi
+    once: true,   // bu cod aosni bir marta ishlatadi
     disable: 'boolean', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function ///// bu kodlar aosni qaysi ekranlarda ishlamasligini taminlaydi
 });
 
