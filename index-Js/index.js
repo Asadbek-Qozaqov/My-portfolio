@@ -105,6 +105,8 @@ for (let i = 0; i < modalViews.length; i++) {
 let swiperPortfolio = new Swiper(".portfolio-container", {
     cssMode: true,
     loop: true,
+    autoplay:true,
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
