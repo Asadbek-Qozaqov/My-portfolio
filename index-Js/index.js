@@ -195,14 +195,14 @@ window.addEventListener('scroll', windowScrollUp);
 
 
 // ================================  DARK LIGHT THEME yani qorong'u yoriq tema qismi  ==============================
-
-document.getElementById('theme-button').addEventListener('click', changeThemeFunction);
+// localStorage.setItem('siteTheme', true);
 
 let theme1 = localStorage.getItem('siteTheme');
-if (theme1 === 'false') {
+if (theme1 === null) {
     document.body.classList.remove('dark-theme');
     document.getElementById('theme-button').classList.remove('uil-sun');
     document.getElementById('theme-button').classList.add('uil-moon');
+    localStorage.siteTheme = false;
 
 } else if (theme1 === 'true') {
     document.body.classList.add('dark-theme');
@@ -234,13 +234,14 @@ function changeThemeFunction() {
     }
 }
 
+document.getElementById('theme-button').addEventListener('click', changeThemeFunction);
+
 // AOS scrol bolgnda effectli chiqishlarning js codi
 
 AOS.init({
     once: true,   // bu cod aosni bir marta ishlatadi
     disable: 'boolean', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function ///// bu kodlar aosni qaysi ekranlarda ishlamasligini taminlaydi
 });
-
 
 
 
